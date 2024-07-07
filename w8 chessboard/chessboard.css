@@ -1,0 +1,28 @@
+#divChessBoard {
+    width: 480px;
+    height: 480px;
+    border: 2px solid #333;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.chessSquare {
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+}
+
+.chessSquare:nth-child(even) {
+    background-color: #b58863;
+}
+
+.chessSquare:nth-child(odd) {
+    background-color: #f0d9b5;
+}
+
+.chessSquare:hover {
+    background-color: #ffeb3b;
+}
